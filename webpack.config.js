@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin= require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 
 module.exports = {
@@ -29,6 +30,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new ESLintPlugin(),
         new MiniCssExtractPlugin({
             filename: "./css/[name].css"
         }),
