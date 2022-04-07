@@ -41,6 +41,7 @@ body {
 
 .card {
   width: 290px;
+  position: relative;
   height: 416px;
   background: #FFFFFF;
   border: 1px solid rgba(136, 140, 140, 0.4);
@@ -51,9 +52,54 @@ body {
 }
 
 .card_active {
+  width: 290px;
+  height: 416px;
   color: white;
-  border: none;
+  border: transparent;
+  box-sizing: border-box;
   background: #00AEC7;
   box-shadow: 0px 4px 7px rgba(0, 58, 64, 0.2);
   border-radius: 30px;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  background-color: black;
+
+
+}
+.icon_position {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.hat {
+  -webkit-mask-image: url("../img/icons/HatIcon.svg");
+  width: 57px;
+  height: 60px;
+
+}
+
+.computer {
+  -webkit-mask-image: url("../img/icons/ComputerIcon.svg");
+  width: 59px;
+  height: 59px;
+
+}
+.pingpong {
+  -webkit-mask-image: url("../img/icons/PingPongIcon.svg");
+  width: 49px;
+  height: 61px;
+
+}
+.tooth {
+  -webkit-mask-image: url("../img/icons/ToothIcon.svg");
+  width: 43px;
+  height: 53px;
+
+}
+
+.icon_active {
+  background: white;
 }
