@@ -15,6 +15,28 @@
 body {
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 400;
+  line-height: 22px;
+  color: #2C3E50;
+  width: 100%;
+  margin:0;
+  padding: 0;
+
+
+}
+main {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.fon {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 70.67%);
 }
 
 .button {
@@ -49,6 +71,8 @@ body {
   border-radius: 30px;
   color: black;
   cursor: pointer;
+  padding: 2rem;
+  padding-top: 6rem;
 }
 
 .card_active {
@@ -106,6 +130,7 @@ body {
 
 .review-image {
   position: relative;
+  float: right;
 }
 
 .review-fon {
@@ -121,3 +146,118 @@ body {
   left:20px;
   z-index: 0;
 }
+
+
+.company {
+  padding: 5rem;
+  width: 30%;
+}
+
+.company__logo {
+  width: 100%;
+}
+
+.logo {
+  width: 80%;
+/*  width: 325px;
+  height: 102px;*/
+}
+.link-block {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 10px rgba(0, 58, 64, 0.2);
+  border-radius: 30px;
+  padding: 1rem 7rem;
+}
+
+.link-block_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2C3E50;
+  text-decoration: none;
+
+}
+
+.link:hover {
+  color: #00AEC7;
+}
+
+.paragraph {
+  text-align: start;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.span {
+  color: #2DB5D3;
+
+}
+
+.company-about {
+  width: 50%;
+}
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.company-about-float {
+  float:right;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+
+}
+
+.link-block_position {
+  z-index: 10;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.second-block {
+  position: relative;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+.background-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
