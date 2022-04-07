@@ -38,3 +38,22 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
 }
+
+.card {
+  width: 290px;
+  height: 416px;
+  background: #FFFFFF;
+  border: 1px solid rgba(136, 140, 140, 0.4);
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.card_active {
+  color: white;
+  border: none;
+  background: #00AEC7;
+  box-shadow: 0px 4px 7px rgba(0, 58, 64, 0.2);
+  border-radius: 30px;
+}
