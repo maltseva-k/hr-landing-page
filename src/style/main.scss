@@ -16,3 +16,25 @@ body {
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 400;
 }
+
+.button {
+  width: 196px;
+  height: 48px;
+  border: none;
+  background: #00AEC7;
+  border-radius: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.button_active {
+  font-weight: 400;
+  background: #FFFFFF;
+  border: 1px dashed #00AEC7;
+  color: #00AEC7;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
