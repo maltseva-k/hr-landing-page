@@ -12,7 +12,9 @@ module.exports = {
     './src/style/main.scss'
   ],
   output: {
-    filename: './js/bundle.js'
+    filename: './js/bundle.js',
+    publicPath: '/hr-landing-page/',
+    path: path.resolve(__dirname, './docs')
   },
   devtool: 'source-map',
   module: {
