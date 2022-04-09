@@ -57,8 +57,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev'
   },
   pagination: {
-    el: '.swiper-pagination'
-    /* clickable: true */
+    el: '.swiper-pagination',
+    clickable: true
   },
   mousewheel: true,
   keyboard: true
@@ -81,3 +81,22 @@ const swiperImage = new Swiper('.swiper-image', {
 })
 
 swiperImage.slideNext()
+
+const swiperCards = new Swiper('.swiperCards', {
+  cssMode: true,
+  navigation: {
+  },
+  pagination: {
+    el: '.swiper-cards-pagination',
+    clickable: true
+  },
+  mousewheel: true,
+  keyboard: true
+})
+
+swiperCards.slideNext()
+
+/* const cardsContainer = document.querySelector('.swiper-cards-container')
+cardsContainer.addEventListener('mouseover', function () {
+  this.classList.add('display-none')
+}) */

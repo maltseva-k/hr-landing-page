@@ -409,6 +409,18 @@ main {
   left: 45px;
 }
 
+.swiper-cards-container {
+  display: none;
+
+}
+.swiper-reviews-pagination {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+
+
 @media (max-width: 767px) {
   .paragraph {
     font-size: 14px;
@@ -470,16 +482,7 @@ main {
     }
   }
   .cards-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap:1rem;
-    .card {
-      width: 100%;
-      position: relative;
-      text-align: start;
-
-    }
+    display: none;
   }
   .block {
     padding-top: 0rem;
@@ -507,6 +510,29 @@ main {
     gap: 1rem;
     position: static;
     justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .swiper-cards-container {
+    display: block;
+    width: 100%;
+    .card {
+      width: 100%;
+      position: relative;
+      text-align: start;
+
+    }
+  }
+  .swiper-cards-pagination {
+    text-align: center;
+  }
+  .swiper-reviews-pagination {
+    display: inline;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-button {
+    display: none;
   }
 }
 
