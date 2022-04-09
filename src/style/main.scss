@@ -260,4 +260,132 @@ main {
   left: 0;
   z-index: -5;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.border {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.review-flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2C3E50;
+
+}
+
+.my_button_prev {
+  margin-top: 20px;
+  position: absolute;
+ bottom:0;
+  left:3rem;
+  width: 25px;
+  height: 25px;
+
+}
+
+.my_button_next {
+  margin-top: 20px;
+  position: absolute;
+  bottom:0;
+  left:6rem;
+  width: 25px;
+  height: 25px;
+}
+
+
+.review_author_position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24.4px;
+  color: #000000;
+  padding-left: 40px;
+
+}
+
+
+.review_author {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+  color: #000000;
+  padding-left: 40px;
+
+}
+
+
+/*.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+ !* !* Center slide text vertically *!
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;*!
+}*/
+
+
+.relative {
+  margin-top:3rem;
+  height: 100%;
+  position: relative;
+}
+
+.arrow_next {
+  background-color: black;
+  background-image: url("../img/icons/ArrowRight.svg");
+}
+
+.arrow-transform {
+  transform: scale(-1, 1);
+
+}
+
+.swiper-button {
+  background-color: transparent;
+  border:none;
+  align-self: center;
+
+}
+
+.flex {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  width: 100%;
+
+}
+
+.center {
+  align-self: center;
+  text-align: center;
+  width: 100px!important;
+  padding-bottom: 8px;
+}
+
+
+
+
 

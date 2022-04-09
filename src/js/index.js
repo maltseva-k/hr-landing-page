@@ -1,3 +1,7 @@
+import Swiper from 'swiper/bundle'
+// import styles bundle
+import 'swiper/css/bundle'
+
 const button = document.querySelector('.button')
 const cards = document.querySelectorAll('.card')
 button.addEventListener('mouseover', function () {
@@ -23,3 +27,57 @@ for (let i = 0; i < cards.length; i++) {
     icon.classList.remove('icon_active')
   })
 }
+
+/* const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
+}) */
+const swiper = new Swiper('.swiper', {
+  cssMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination'
+    /* clickable: true */
+  },
+  mousewheel: true,
+  keyboard: true
+})
+
+swiper.slideNext()
+
+const swiperImage = new Swiper('.swiper-image', {
+  cssMode: true,
+  navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev'
+  },
+  pagination: {
+    el: '.swiper-pag',
+    clickable: true
+  },
+  mousewheel: true,
+  keyboard: true
+})
+
+swiperImage.slideNext()
