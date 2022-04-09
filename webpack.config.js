@@ -18,8 +18,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sass|scss)$/,
-        include: path.resolve(__dirname, 'src/style'),
+        test: /\.(sass|scss|css)$/,
+        include: [
+          path.resolve(__dirname, 'src/style'),
+          path.resolve(__dirname, 'node_modules/swiper/swiper-bundle.min.css')
+        ],
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
